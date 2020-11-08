@@ -2,10 +2,10 @@ FROM shoepping/oraclejdk:8
 
 # https://github.com/keeganwitt/docker-gradle/blob/e486d3ff8bb68e77ac37239d68d4d60f4a9485fc/jdk7/Dockerfile
 ENV GRADLE_HOME /opt/gradle
-ENV GRADLE_VERSION 6.7
+ENV GRADLE_VERSION 4.10.3
 
 # https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip.sha256
-ARG GRADLE_DOWNLOAD_SHA256=8ad57759019a9233dc7dc4d1a530cefe109dc122000d57f7e623f8cf4ba9dfc4
+ARG GRADLE_DOWNLOAD_SHA256=8626cbf206b4e201ade7b87779090690447054bc93f052954c78480fa6ed186e
 
 RUN set -o errexit -o nounset \
 	&& echo "Downloading Gradle" \
@@ -23,7 +23,7 @@ RUN set -o errexit -o nounset \
 
 # https://github.com/groovy/docker-groovy/blob/master/jdk8/Dockerfile
 ENV GROOVY_HOME /opt/groovy
-ENV GROOVY_VERSION 3.0.6
+ENV GROOVY_VERSION 2.5.13
 
 RUN set -o errexit -o nounset \
 	&& echo "Downloading Groovy" \
