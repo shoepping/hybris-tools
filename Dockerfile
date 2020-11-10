@@ -42,6 +42,9 @@ RUN set -o errexit -o nounset \
 	&& ln --symbolic "${GROOVY_HOME}/bin/groovysh" /usr/bin/groovysh \
     && ln --symbolic "${GROOVY_HOME}/bin/java2groovy" /usr/bin/java2groovy
 
+ENV JACOCO_VERSION 0.8.2
+RUN wget https://repo1.maven.org/maven2/org/jacoco/org.jacoco.agent/${JACOCO_VERSION}/org.jacoco.agent-${JACOCO_VERSION}-runtime.jar -P /opt
+
 RUN apt-get update
 RUN apt-get install -y \
      git
