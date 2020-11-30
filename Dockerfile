@@ -47,7 +47,10 @@ RUN wget https://repo1.maven.org/maven2/org/jacoco/org.jacoco.agent/${JACOCO_VER
 
 RUN apt-get update
 RUN apt-get install -y \
-     git
+		curl \
+		git \
+		zip \
+		wget
 
 ENV TZ=Europe/Vienna
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone

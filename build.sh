@@ -1,5 +1,5 @@
 #!/bin/bash
 
-TODAY=`date +%m.%d`
+TODAY=`date +%y.%m.%d`
 
 docker build -t shoepping/hybris-tools:${TODAY} ./
