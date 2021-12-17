@@ -23,7 +23,7 @@ RUN set -o errexit -o nounset \
 
 # https://github.com/groovy/docker-groovy/blob/master/jdk8/Dockerfile
 ENV GROOVY_HOME /opt/groovy
-ENV GROOVY_VERSION 2.5.13
+ENV GROOVY_VERSION 2.5.15
 
 RUN set -o errexit -o nounset \
 	&& echo "Downloading Groovy" \
