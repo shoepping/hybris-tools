@@ -5,7 +5,7 @@ ENV GRADLE_HOME /opt/gradle
 ENV GRADLE_VERSION 6.8.3
 
 # https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip.sha256
-ARG GRADLE_DOWNLOAD_SHA256=8626cbf206b4e201ade7b87779090690447054bc93f052954c78480fa6ed186e
+ARG GRADLE_DOWNLOAD_SHA256=7faa7198769f872826c8ef4f1450f839ec27f0b4d5d1e51bade63667cbccd205
 
 RUN set -o errexit -o nounset \
 	&& echo "Downloading Gradle" \
