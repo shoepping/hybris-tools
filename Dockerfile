@@ -2,7 +2,7 @@ FROM shoepping/oraclejdk:8
 
 # https://github.com/keeganwitt/docker-gradle/blob/e486d3ff8bb68e77ac37239d68d4d60f4a9485fc/jdk7/Dockerfile
 ENV GRADLE_HOME /opt/gradle
-ENV GRADLE_VERSION 4.10.3
+ENV GRADLE_VERSION 6.8.3
 
 # https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip.sha256
 ARG GRADLE_DOWNLOAD_SHA256=8626cbf206b4e201ade7b87779090690447054bc93f052954c78480fa6ed186e
